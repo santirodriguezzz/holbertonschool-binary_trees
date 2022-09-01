@@ -12,11 +12,17 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
 	binary_tree_t *node;
 
+	/* Chequeo como pide Holberton-chan */
+	if (parent == NULL)
+	{
+		return (NULL);
+	}
+
 	/* Creo un nodo nuevo usando tu funcion xd */
 	node = binary_tree_node(parent, value);
 
 	/* Chequeo como pide Holberton-chan */
-	if (parent == NULL || node == NULL)
+	if (node == NULL)
 	{
 		return (NULL);
 	}
