@@ -13,7 +13,7 @@ int binary_tree_is_root(const binary_tree_t *node)
 	{
 		return (0);
 	}
-	/*Por que parent?, bueno pide saber si es root, osea el orignal,
+	/* Por que parent?, bueno pide saber si es root, osea el orignal,
 	 * el primero de los primeros, el unico entre los todos...
 	 *
 	 * Entonces lo que hacemos es ver si node tiene parent, si tiene
