@@ -23,10 +23,10 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	/* Vemos que lado es mas largo apra ver cual es la altura */
 	if (L1 < R1)
 	{
-		return (R1);
+		return (R1 - 1);
 	}
 	else
 	{
-		return (L1);
+		return (L1 - 1);
 	}
 }
