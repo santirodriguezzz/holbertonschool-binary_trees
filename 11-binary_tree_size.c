@@ -21,5 +21,5 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	csgo = binary_tree_size(tree->left) + 1;
 	csgo = csgo + binary_tree_size(tree->right);
 
-	return(csgo);
+	return (csgo);
 }
