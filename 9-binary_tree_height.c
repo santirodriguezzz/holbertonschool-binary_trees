@@ -15,6 +15,11 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	{
 		return (0);
 	}
+	/* Si no hay nada en izqquierda y derecha, entonces la altura es 0 */
+	if (tree->right == NULL && tree->left == NULL)
+	{
+		return (0);
+	}
 
 	/*Un contador recursivo, 'EL CON-SIVO' xd */
 	L1 = binary_tree_height(tree->left) + 1;
@@ -23,10 +28,10 @@ size_t binary_tree_height(const binary_tree_t *tree)
 	/* Vemos que lado es mas largo apra ver cual es la altura */
 	if (L1 < R1)
 	{
-		return (R1 - 1);
+		return (R1);
 	}
 	else
 	{
-		return (L1 - 1);
+		return (L1);
 	}
 }
