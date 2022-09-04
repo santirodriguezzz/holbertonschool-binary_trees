@@ -7,7 +7,7 @@
  *
  * Return: 1 if full, 0 if fail
  */
-int binary_tree_is_full(const binary_tree_t *tree);
+int binary_tree_is_full(const binary_tree_t *tree)
 {
 	int L1 = 0, R1 = 0;
 
